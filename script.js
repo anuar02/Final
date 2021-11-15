@@ -156,7 +156,7 @@ play.addEventListener("click", function () {
       "(1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 2), (1, 1, 1, 2, 2), (1, 2, 2, 2), (1, 1, 1, 1, 3), (1, 1, 2, 3), (2, 2, 3), (1, 3, 3), (1, 1, 1, 4), (1, 2, 4), (3, 4), (1, 1, 5), (2, 5), (1, 6), (7)";
   }
 
-  list1.innerHTML = `Possible combinations of goals of Team 1 ${list1.innerHTML}`;
+  list1.innerHTML = `Possible combinations of goals of Team 1: <br> ${list1.innerHTML}`;
 
   if (goals2.value == "1") {
     list2.innerHTML = "1";
@@ -178,7 +178,7 @@ play.addEventListener("click", function () {
     list2.innerHTML =
       "(1, 1, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 2), (1, 1, 1, 2, 2), (1, 2, 2, 2), (1, 1, 1, 1, 3), (1, 1, 2, 3), (2, 2, 3), (1, 3, 3), (1, 1, 1, 4), (1, 2, 4), (3, 4), (1, 1, 5), (2, 5), (1, 6), (7)";
   }
-  list2.innerHTML = `Possible combinations of goals of Team 2 ${list2.innerHTML}`;
+  list2.innerHTML = `Possible combinations of goals of Team 2: <br> ${list2.innerHTML}`;
 });
 overlay3.addEventListener("click", function () {
   hidden3.style.visibility = "hidden";
