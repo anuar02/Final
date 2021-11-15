@@ -381,5 +381,18 @@ footer {
   .cont1 {
     display: block;
   }
+  .btn {
+    left: 55%;
+  }
+  img {
+    padding-left: 10%;
+  }
+  span {
+    margin-left: 5%;
+  }
+  figcaption {
+    margin-left: 3%;
+  }
 }
+
 
