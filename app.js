@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3300;
+const port = 3000;
 const path = require("path");
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
@@ -40,6 +40,14 @@ app.get("/script.js", function (req, res) {
 });
 app.get("/about.html", function (req, res) {
   res.sendFile(path.join(__dirname + "/about.html"));
+  //__dirname : It will resolve to your project folder.
+});
+app.get("/about/team_photo", function (req, res) {
+  res.sendFile(path.join(__dirname + "/images/Team.png"));
+  //__dirname : It will resolve to your project folder.
+});
+app.get("/video", function (req, res) {
+  res.sendFile(path.join(__dirname + "/video.mp4"));
   //__dirname : It will resolve to your project folder.
 });
 app.listen(port);
