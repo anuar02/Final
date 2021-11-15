@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Football</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">  
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+              </ul>
+          </div> 
+      </nav>
+    </section>
+
+    <div class="cont1">
+      <div class="cont">
+        <section class="team team1">
+          <input
+            type="input"
+            class="form__field"
+            placeholder=""
+            name="name"
+            id="name1"
+            required
+          />
+          <p class="score" id="score1" style="margin-top: 50px;">0</p>
+          <p class="score" id="players1"></p>
+          <div class="scores">
+            <p class="goals">Goals</p>
+            <div class="num-goals">
+              <input
+                min="0"
+                max="7"
+                class="in-goal goals1"
+                type="number"
+                name="goals1"
+                value="0"
+              />
+          </div>
+        </section>
+        <section class="team team2">
+          <input
+            type="input"
+            class="form__field"
+            placeholder=""
+            name="name"
+            id="name2"
+            required
+          />
+          <p class="score" id="score2" style="margin-top: 50px;">0</p>
+          <p class="score" id="players2"></p>
+          <div class="scores">
+            <p class="goals">Goals</p>
+            <div class="num-goals">
+              <input
+                class="in-goal goals2"
+                name="goals2"
+                min="0"
+                max="7"
+                type="number"
+                value="0"
+              />
+            </div>
+          </div>
+        </section>
+        
+        <span><h2>VS</h2></span>
+        <div class="modal hidden1">
+          <h1>Team 1 (Leo Messi, Mesut Ozil)</h1>
+          <p style="font-size: 14px;">The number of players must be less than 11</p>
+          <div class="form-group shadow-textarea">
+            <textarea class="form-control z-depth-1 names1" id="exampleFormControlTextarea6" rows="3" placeholder="Write names here..."></textarea>
+          </div>
+          <button class="enter enter1">ENTER</button>
+        </div>
+
+        <div class="modal hidden2">
+          <h1>Team 2 (Leo Messi, Mesut Ozil)</h1>
+          <p style="font-size: 14px;">The number of players must be less than 11</p>
+          <div class="form-group shadow-textarea">
+            <textarea class="form-control z-depth-1 names2" id="exampleFormControlTextarea6" rows="3" placeholder="Write names here..."></textarea>
+          </div>
+          <button class="enter enter2">ENTER</button>
+        </div>
+
+        <div class="modal hidden3">
+          <h1>Number of goals must be less than 7!</h1>
+        </div>
+
+        <div class="modal hidden4" style="color: rgb(0, 0, 0);">
+          <h1 id="congrats" style="text-align: center; color: white;">Congratulations</h1>
+          <br>
+          <br>
+          <h1 id="list1" style="color: rgb(242, 25, 25);"></h1>
+          <h1 id="list2" style="color: #022c6b;"></h1>
+          
+        </div>
+
+        <div class="overlay1 overlay2 overlay3 overlay4 hidden1 hidden2 hidden3 hidden4"></div>
+        <button class="btn btn--new">🔄 New game</button>
+        <button class="btn btn-team1">🟥 Team 1</button>
+        <button class="btn btn-team2">🟦 Team 2</button>
+        <img src="/images/ball.png" alt="" class="ball">
+        <figcaption>Play!</figcaption>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white" style="position: absolute;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="align-items: center;">
+        © 2021 Copyright <br>
+        <a href="" style="color: #497ee9; padding-left: 55px; "><i class="fab fa-facebook-f"></i></a>
+        <a href="" style="color: #497ee9;"><i class="fab fa-instagram"></i></a>
+        <a href="" style="color: #497ee9;;"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
