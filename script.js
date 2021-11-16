@@ -104,8 +104,8 @@ play.addEventListener("click", function () {
   var x = Number(goals2.value) + Number(goals1.value);
 
   if (x > 7) {
-    hidden3.style.visibility = "visible";
-    overlay3.style.visibility = "visible";
+    alert("The sum of goals must be less than 7");
+    return;
   }
   if (goals1.value > goals2.value) {
     hidden4.style.visibility = "visible";
