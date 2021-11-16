@@ -47,8 +47,9 @@ app.get("/about/team_photo", function (req, res) {
   //__dirname : It will resolve to your project folder.
 });
 app.get("/video", function (req, res) {
-  res.sendFile(path.join(__dirname + "/video.mp4"));
-  //__dirname : It will resolve to your project folder.
+  res.redirect(
+    "https://www.youtube.com/watch?v=yXS8iNKqsCM&ab_channel=RLFComps"
+  );
 });
 app.listen(port);
 
