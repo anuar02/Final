@@ -118,8 +118,6 @@ play.addEventListener("click", function () {
     hidden4.style.backgroundColor = "rgb(4, 185, 85)";
     overlay4.style.backgroundColor = "rgb(4, 185, 85)";
   } else if (goals1.value < goals2.value) {
-    findCombinations(goals2.value);
-    findCombinations(goals2.value);
     hidden4.style.visibility = "visible";
     overlay4.style.visibility = "visible";
     document.getElementById("congrats").innerHTML = `The winner is ${
