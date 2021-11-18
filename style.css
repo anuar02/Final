@@ -394,5 +394,7 @@ footer {
     margin-left: 3%;
   }
 }
-
+.bbb-col img{
+border-radius: 2rem; 
+}
 
